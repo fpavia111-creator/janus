@@ -1,4 +1,4 @@
-# Contributing to specgate
+# Contributing to Janus
 
 Thanks for helping! Bug reports, feature ideas and pull requests are all welcome.
 

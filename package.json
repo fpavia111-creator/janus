@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build": "tsc -p .",
-    "test": "npm run build && mkdir -p reports && node --test --test-reporter=spec --test-reporter-destination=stdout --test-reporter=./dist/src/reporter.js --test-reporter-destination=reports/junit.xml test/ && npm run gate",
+    "test": "npm run build && mkdir -p reports && node scripts/run-tests.cjs --test-reporter=spec --test-reporter-destination=stdout --test-reporter=./dist/src/reporter.js --test-reporter-destination=reports/junit.xml && npm run gate",
     "prepack": "npm run build",
     "gate": "node dist/src/cli.js check --all --junit reports/junit.xml --summary reports/specgate-summary.md --sarif reports/specgate.sarif"
   },
@@ -75,5 +75,5 @@
   "bugs": {
     "url": "https://github.com/fpavia111-creator/janus/issues"
   },
-  "mcpName": "io.github.fpavia111-creator/specgate"
+  "mcpName": "io.github.fpavia111-creator/janus"
 }

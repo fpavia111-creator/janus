@@ -20,13 +20,13 @@ npm install -g @kurtfrancisco/janus   # or use npx @kurtfrancisco/janus ...
 **Claude Code**
 
 ```bash
-claude mcp add janus -- npx -y -p @kurtfrancisco/janus@0.4.0 janus-mcp
+claude mcp add janus -- npx -y -p @kurtfrancisco/janus@0.4.1 janus-mcp
 ```
 
 **Cursor** — add to `~/.cursor/mcp.json` (global) or `.cursor/mcp.json` (project). The same snippet works for Claude Desktop, VS Code and Windsurf:
 
 ```json
-{ "mcpServers": { "janus": { "command": "npx", "args": ["-y", "-p", "@kurtfrancisco/janus@0.4.0", "janus-mcp"] } } }
+{ "mcpServers": { "janus": { "command": "npx", "args": ["-y", "-p", "@kurtfrancisco/janus@0.4.1", "janus-mcp"] } } }
 ```
 
 Restart the client and the tools appear. Full details below.
@@ -194,7 +194,7 @@ Inputs: `junit` (space-separated paths, default `reports/junit.xml`), `change` (
 ## MCP server
 
 ```json
-{ "mcpServers": { "janus": { "command": "npx", "args": ["-y", "-p", "@kurtfrancisco/janus@0.4.0", "janus-mcp"] } } }
+{ "mcpServers": { "janus": { "command": "npx", "args": ["-y", "-p", "@kurtfrancisco/janus@0.4.1", "janus-mcp"] } } }
 ```
 
 Tools: `list_changes`, `show_change`, `new_change`, `signoff_status`, `write_plan`, `check`, `drift`. The server is confined to `JANUS_ROOT` (or legacy `SPECGATE_ROOT`) (or its working directory): a per-call `root` must be inside it, JUnit paths must be inside the root, and change ids must be slugs.

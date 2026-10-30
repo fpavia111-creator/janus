@@ -1,6 +1,6 @@
 {
   "name": "@kurtfrancisco/janus",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Janus of Agents (formerly SpecGate): Sign-off gate and requirement-to-test traceability for spec-driven AI development (OpenSpec + Superpowers compatible).",
   "type": "module",
   "license": "MIT",
